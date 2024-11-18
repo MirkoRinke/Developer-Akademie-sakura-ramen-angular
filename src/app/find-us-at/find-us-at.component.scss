@@ -1,0 +1,32 @@
+.find-us-at {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 64px;
+  gap: 8px;
+
+  .heading {
+    font-size: 80px;
+    font-weight: bold;
+    color: #9f0908;
+    text-transform: uppercase;
+  }
+
+  .sub-heading-wrapper {
+    display: flex;
+    align-items: center;
+
+    .sub-heading-icon {
+      height: 33px;
+      width: 33px;
+    }
+
+    .sub-heading {
+      font-family: "Raleway", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: black;
+    }
+  }
+}

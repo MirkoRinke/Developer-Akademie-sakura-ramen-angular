@@ -1,3 +1,5 @@
+@use "../../_var" as vars;
+
 .our-menu {
   background-image: url("/assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
   background-position: center;
@@ -13,10 +15,29 @@
     font-weight: bold;
     color: #9f0908;
     text-transform: uppercase;
+
+    @media (max-width: vars.$breakpoint-md) {
+      font-size: 64px;
+    }
+    @media (max-width: vars.$breakpoint-sm) {
+      font-size: 48px;
+    }
+
+    @media (max-width: vars.$breakpoint-xs) {
+      font-size: 40px;
+    }
+
+    @media (max-width: vars.$breakpoint-xxs) {
+      font-size: 32px;
+    }
   }
 
   .menu:nth-of-type(2n) {
     flex-direction: row-reverse;
+
+    @media (max-width: vars.$breakpoint-sm) {
+      flex-direction: column;
+    }
   }
 
   .menu {
@@ -25,10 +46,47 @@
     align-items: center;
     width: 100%;
     gap: 250px;
+    padding-inline: 25px;
+
+    @media (max-width: vars.$breakpoint-lg) {
+      gap: 150px;
+    }
+
+    @media (max-width: vars.$breakpoint-md) {
+      gap: 50px;
+    }
+
+    @media (max-width: vars.$breakpoint-sm) {
+      flex-direction: column;
+    }
+
+    @media (max-width: vars.$breakpoint-xs) {
+      gap: 32px;
+    }
 
     & img {
       height: 352px;
       width: 352px;
+
+      @media (max-width: vars.$breakpoint-lg) {
+        height: 300px;
+        width: 300px;
+      }
+
+      @media (max-width: vars.$breakpoint-md) {
+        height: 250px;
+        width: 250px;
+      }
+
+      @media (max-width: vars.$breakpoint-sm) {
+        height: 352px;
+        width: 352px;
+      }
+
+      @media (max-width: vars.$breakpoint-xs) {
+        height: 90%;
+        width: 90%;
+      }
     }
 
     .info {
@@ -39,10 +97,27 @@
       width: auto;
       flex-grow: 1;
 
+      @media (max-width: vars.$breakpoint-md) {
+        max-width: 100%;
+        width: 100%;
+      }
+
       .dish {
         font-family: "Economica", sans-serif;
         font-weight: bold;
         font-size: 56px;
+
+        @media (max-width: vars.$breakpoint-lg) {
+          font-size: 48px;
+        }
+
+        @media (max-width: vars.$breakpoint-md) {
+          font-size: 40px;
+        }
+
+        @media (max-width: vars.$breakpoint-xs) {
+          font-size: 32px;
+        }
       }
 
       .varieties {
@@ -61,6 +136,10 @@
             font-weight: bold;
             text-transform: uppercase;
             color: #675e54;
+
+            @media (max-width: vars.$breakpoint-xs) {
+              font-size: 24px;
+            }
           }
 
           .price {
@@ -69,6 +148,10 @@
             font-weight: bold;
             text-transform: uppercase;
             color: #675e54;
+
+            @media (max-width: vars.$breakpoint-xs) {
+              font-size: 24px;
+            }
           }
         }
       }

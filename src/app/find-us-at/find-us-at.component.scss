@@ -1,3 +1,5 @@
+@use "../../_var" as vars;
+
 .find-us-at {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,21 @@
     font-weight: bold;
     color: #9f0908;
     text-transform: uppercase;
+
+    @media (max-width: vars.$breakpoint-md) {
+      font-size: 64px;
+    }
+    @media (max-width: vars.$breakpoint-sm) {
+      font-size: 48px;
+    }
+
+    @media (max-width: vars.$breakpoint-xs) {
+      font-size: 40px;
+    }
+
+    @media (max-width: vars.$breakpoint-xxs) {
+      font-size: 32px;
+    }
   }
 
   .sub-heading-wrapper {
@@ -20,6 +37,11 @@
     .sub-heading-icon {
       height: 33px;
       width: 33px;
+
+      @media (max-width: vars.$breakpoint-md) {
+        height: 22px;
+        width: 22px;
+      }
     }
 
     .sub-heading {
@@ -27,6 +49,10 @@
       font-size: 24px;
       font-weight: 400;
       color: black;
+
+      @media (max-width: vars.$breakpoint-md) {
+        font-size: 16px;
+      }
     }
   }
 }

@@ -1,3 +1,5 @@
+@use "../../_var" as vars;
+
 .hero {
   background-image: url("/assets/img/1_hero/JPG/hero_bg.jpg");
   background-position: 50% 85%;
@@ -8,12 +10,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-inline: 25px;
+    margin-top: 50px;
 
     .main {
       font-size: 96px;
       font-weight: bold;
       text-transform: uppercase;
       color: rgb(255, 255, 255);
+
+      @media (max-width: vars.$breakpoint-md) {
+        font-size: 66px;
+      }
+
+      @media (max-width: vars.$breakpoint-sm) {
+        font-size: 48px;
+        margin-top: 70px;
+      }
+
+      @media (max-width: vars.$breakpoint-xs) {
+        font-size: 36px;
+        margin-top: 100px;
+      }
+
+      @media (max-width: vars.$breakpoint-xxs) {
+        font-size: 32px;
+      }
     }
 
     .sub {
@@ -21,6 +43,10 @@
       font-weight: 400;
       text-transform: uppercase;
       color: rgb(255, 255, 255);
+
+      @media (max-width: vars.$breakpoint-md) {
+        font-size: 16px;
+      }
     }
   }
 }

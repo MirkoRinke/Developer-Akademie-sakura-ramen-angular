@@ -1,10 +1,14 @@
+@use "../../../_var" as vars;
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   margin-inline: auto;
   height: 112px;
+  padding-inline: 25px;
 
   .sakura-icon {
     height: 64px;
@@ -12,6 +16,11 @@
 
     &:hover {
       animation: rotate 4s linear infinite;
+    }
+
+    @media (max-width: vars.$breakpoint-xs) {
+      height: 40px;
+      width: 40px;
     }
 
     @keyframes rotate {
@@ -28,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 25px;
 
     .item {
       color: white;
@@ -36,6 +45,10 @@
       &:hover {
         cursor: pointer;
         color: rgb(128, 128, 128);
+      }
+
+      @media (max-width: vars.$breakpoint-sm) {
+        display: none;
       }
     }
 
@@ -47,11 +60,15 @@
       border: 2px solid white;
       border-radius: 8px;
       padding: 5px 10px;
-
       background-color: rgb(158, 8, 8);
 
       .number {
+        font-size: 20px;
         color: white;
+
+        @media (max-width: vars.$breakpoint-xs) {
+          font-size: 16px;
+        }
       }
 
       &:hover {

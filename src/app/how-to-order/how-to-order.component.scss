@@ -1,23 +1,50 @@
+@use "../../_var" as vars;
+
 .how-to-order {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   margin-inline: auto;
   padding-block: 120px;
   gap: 64px;
+
+  @media (max-width: vars.$breakpoint-sm) {
+    padding-block: 72px;
+  }
 
   .heading {
     font-size: 80px;
     font-weight: bold;
     color: #9f0908;
     text-transform: uppercase;
+
+    @media (max-width: vars.$breakpoint-md) {
+      font-size: 64px;
+    }
+    @media (max-width: vars.$breakpoint-sm) {
+      font-size: 48px;
+    }
+
+    @media (max-width: vars.$breakpoint-xs) {
+      font-size: 40px;
+    }
+
+    @media (max-width: vars.$breakpoint-xxs) {
+      font-size: 32px;
+    }
   }
 
   .instruction {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+
+    @media (max-width: vars.$breakpoint-sm) {
+      flex-direction: column;
+      gap: 32px;
+    }
 
     .wrapper {
       display: flex;
@@ -28,6 +55,11 @@
       & img {
         height: 128px;
         width: 128px;
+
+        @media (max-width: vars.$breakpoint-md) {
+          height: 96px;
+          width: 96px;
+        }
       }
 
       & span {
@@ -35,6 +67,10 @@
         font-weight: bold;
         font-size: 56px;
         text-align: center;
+
+        @media (max-width: vars.$breakpoint-md) {
+          font-size: 48px;
+        }
       }
     }
   }

@@ -1,3 +1,5 @@
+@use "../../_var" as vars;
+
 footer {
   background-color: rgb(10, 19, 29);
 
@@ -5,15 +7,36 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin-inline: auto;
     height: 144px;
+    padding-inline: 25px;
 
-    .logo {
-      height: 44px;
+    .icon {
+      .sakura_icon {
+        height: 44px;
 
-      &:hover {
-        cursor: pointer;
+        &:hover {
+          cursor: pointer;
+        }
+
+        @media (max-width: vars.$breakpoint-md) {
+          display: none;
+        }
+      }
+
+      .sakura-icon-mobile {
+        display: none;
+        height: 44px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        @media (max-width: vars.$breakpoint-md) {
+          display: block;
+        }
       }
     }
 

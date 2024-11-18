@@ -1,6 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-  background-color: black;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #9f0908 rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../src/assets/fronts/Raleway-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../src/assets/fronts/Raleway-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Economica";
+  src: url("../src/assets/fronts/Economica-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Economica";
+  src: url("../src/assets/fronts/Economica-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Economica";
+  src: url("../src/assets/fronts/Economica-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Economica";
+  src: url("../src/assets/fronts/Economica-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
 }
 
 a {

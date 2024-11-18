@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
-import { HeaderComponent } from './header/header.component';
+import { HeroSectionComponent } from './hero-section/hero-section.component';
+import { HowToOrderComponent } from './how-to-order/how-to-order.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [HeroSectionComponent, HowToOrderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

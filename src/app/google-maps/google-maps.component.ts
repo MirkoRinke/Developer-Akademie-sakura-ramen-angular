@@ -5,8 +5,12 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './google-maps.component.html',
-  styleUrl: './google-maps.component.scss'
+  styleUrl: './google-maps.component.scss',
 })
 export class GoogleMapsComponent {
+  agreed = false;
 
+  isAgreed() {
+    this.agreed = true;
+  }
 }

@@ -1,0 +1,25 @@
+<section class="our-menu">
+  <h2 class="heading">Our menu</h2>
+  @for (menu of menuList; track menu.id) {
+  <div class="menu">
+    <img [src]="menu.image" alt="Tonkotsu Ramen" />
+    <div class="info">
+      <h3 class="dish">{{ menuList[menu.id].name }}</h3>
+      <div class="varieties">
+        <div class="sort">
+          <span class="name">{{ menuList[menu.id].items[0].type }}</span>
+          <span class="price">{{ menuList[menu.id].items[0].price }}</span>
+        </div>
+        <div class="sort">
+          <span class="name">{{ menuList[menu.id].items[1].type }}</span>
+          <span class="price">{{ menuList[menu.id].items[1].price }}</span>
+        </div>
+        <div class="sort">
+          <span class="name">{{ menuList[menu.id].items[2].type }}</span>
+          <span class="price">{{ menuList[menu.id].items[2].price }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</section>

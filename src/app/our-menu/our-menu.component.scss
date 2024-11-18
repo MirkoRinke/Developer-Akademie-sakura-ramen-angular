@@ -130,18 +130,7 @@
           display: flex;
           justify-content: space-between;
 
-          .name {
-            font-family: "Raleway", sans-serif;
-            font-size: 32px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #675e54;
-
-            @media (max-width: vars.$breakpoint-xs) {
-              font-size: 24px;
-            }
-          }
-
+          .name,
           .price {
             font-family: "Raleway", sans-serif;
             font-size: 32px;

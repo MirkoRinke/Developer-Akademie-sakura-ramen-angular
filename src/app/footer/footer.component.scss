@@ -1,0 +1,34 @@
+footer {
+  background-color: rgb(10, 19, 29);
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    margin-inline: auto;
+    height: 144px;
+
+    .logo {
+      height: 44px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .social-media {
+      display: flex;
+      gap: 10px;
+
+      .social-icon {
+        height: 40px;
+        width: 40px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

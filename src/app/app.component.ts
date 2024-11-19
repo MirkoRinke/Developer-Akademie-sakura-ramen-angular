@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { HowToOrderComponent } from './how-to-order/how-to-order.component';
@@ -11,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
   selector: 'app-root',
   standalone: true,
   imports: [
+    RouterOutlet,
     HeroSectionComponent,
     HowToOrderComponent,
     OurMenuComponent,

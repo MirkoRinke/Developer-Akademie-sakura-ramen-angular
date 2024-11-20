@@ -22,7 +22,7 @@
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "baseHref": "/sakura-ramen-angular/",
+            "baseHref": "/angular-projects/sakura-ramen-angular/",
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",

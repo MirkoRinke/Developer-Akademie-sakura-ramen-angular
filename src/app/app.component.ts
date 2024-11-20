@@ -1,25 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { HeroSectionComponent } from './hero-section/hero-section.component';
-import { HowToOrderComponent } from './how-to-order/how-to-order.component';
-import { OurMenuComponent } from './our-menu/our-menu.component';
-import { FindUsAtComponent } from './find-us-at/find-us-at.component';
-import { GoogleMapsComponent } from './google-maps/google-maps.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    HeroSectionComponent,
-    HowToOrderComponent,
-    OurMenuComponent,
-    FindUsAtComponent,
-    GoogleMapsComponent,
-    FooterComponent,
-  ],
+  imports: [RouterOutlet, FooterComponent, MainContentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

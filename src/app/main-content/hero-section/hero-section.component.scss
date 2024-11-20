@@ -1,7 +1,7 @@
-@use "../../_var" as vars;
+@use "../../../var" as vars;
 
 .hero {
-  background-image: url("../../assets/img/1_hero/JPG/hero_bg.jpg");
+  background-image: url("../../../assets/img/1_hero/JPG/hero_bg.jpg");
   background-position: 50% 85%;
   background-size: cover;
   height: 100vh;

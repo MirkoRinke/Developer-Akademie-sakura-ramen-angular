@@ -1,7 +1,7 @@
-@use "../../_var" as vars;
+@use "../../../var" as vars;
 
 .our-menu {
-  background-image: url("../../assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
+  background-image: url("../../../assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
   background-position: center;
   background-size: cover;
   display: flex;

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-
-import { MENU_LIST } from '../data/menu.list';
+import { MENU_LIST } from '../../data/menu.list';
 
 @Component({
   selector: 'app-our-menu',

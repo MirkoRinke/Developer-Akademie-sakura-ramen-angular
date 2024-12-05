@@ -1,27 +1,45 @@
-# SakuraRamenAngular
+# Sakura Ramen
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+![](https://raw.githubusercontent.com/MirkoRinke/Developer-Akademie-sakura-ramen/main/preview.jpg)
 
-## Development server
+### 📋 Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Welcome to my updated project as part of the Developer Academy! This time, I recreated the website for the restaurant *Sakura Ramen*, known for its authentic and freshly prepared ramen dishes, using **Angular**.
 
-## Code scaffolding
+## 🛠️ Built with
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular
+- TypeScript
+- SCSS
 
-## Build
+## ⚙️ How to Use
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MirkoRinke/Developer-Akademie-sakura-ramen.git
+   ```
 
-## Running unit tests
+2. Navigate to the project directory:
+   ```bash
+   cd Developer-Akademie-sakura-ramen
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Running end-to-end tests
+4. Start the development server:
+   ```bash
+   ng serve
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+5. Open the application in your browser at:
+   ```
+   http://localhost:4200
+   ```
 
-## Further help
+## ✍️ Author
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ - [Webiste](https://mirkorinke.dev)
+ - [Github](https://github.com/MirkoRinke)
